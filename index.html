@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="stylesheet" type="text/css" href="css/semanticui.css"> -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Converter</title>
+
+</head>
+<body>
+
+    <div class="pageGridWrapper">
+
+        <section class="conversionInput">
+
+            <div class="title">
+                <h1> Currency Converter </h1>
+            </div>
+
+            <br><br>
+
+            <div class="amount">
+                <h1>Amount</h1>
+                <!-- <input type="text" name="amount"> -->
+                <div class="ui input focus">
+                    <input class="inputField" type="text" placeholder="Amount...">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="convertFromWrapper">
+                <h1>From</h1>
+                <div class="convertFrom conversionBar">
+                    <div class="ui dropdown menu">
+                        <div class="ui simple dropdown item">
+                            Metric
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item" data-value="0">METRIC TONS</div>
+                                <div class="item" data-value="1">KILOGRAMS</div>
+                                <div class="item" data-value="2">POUNDS</div>
+                                <div class="item" data-value="3">OZ</div>
+                                <div class="item" data-value="4">GRAMS</div>
+                                <div class="item" data-value="5">TONS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="reverse"> <button class="reverseButton"><img src="./imgs/up-and-down-arrows.svg"></button> </div>
+
+            <div class="converToWrapper">
+                <h1>To</h1>
+                <div class="convertFrom conversionBar">
+                    <div class="ui dropdown menu">
+                        <div class="ui simple dropdown item">
+                            Metric
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item" data-value="0">METRIC TONS</div>
+                                <div class="item" data-value="1">KILOGRAMS</div>
+                                <div class="item" data-value="2">POUNDS</div>
+                                <div class="item" data-value="3">OZ</div>
+                                <div class="item" data-value="4">GRAMS</div>
+                                <div class="item" data-value="5">TONS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- <div><button>Convert Now</button></div> -->
+            <button class="positive ui button convertNowButton">Convert Now  </button>
+        </section>
+
+        <section class="conversionOutput">
+
+            <div class="conversionSymbol"> <button> <img src="./imgs/dumbbell.svg"> </button> </div>
+
+            <br><br>
+
+            <div>
+                <h1 class="convertedAmount">50</h1>
+                <h4 class="currentUnit">Pounds</h4>
+            </div>
+
+            <div>
+                <h1 class="convertedToAmount">22.680</h1>
+                <h4 class="convertedUnit">Kilograms</h4>
+            </div>
+
+            <h3 class="convertedEquation">1 lb = 0.45359237 kg</h3>
+
+        </section>
+
+    </div>
+
+
+<script src=""></script>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>

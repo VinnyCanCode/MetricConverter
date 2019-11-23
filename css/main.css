@@ -1,0 +1,194 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+button {
+  outline: none; }
+
+input {
+  border-color: transparent !important; }
+
+body {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: #181b1a; }
+  body .pageGridWrapper {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background: #FDC830;
+    background: -webkit-linear-gradient(to left, #F37335, #FDC830);
+    background: linear-gradient(to left, #F37335, #FDC830); }
+    body .pageGridWrapper .conversionInput {
+      grid-row: 1 / span 1;
+      text-align: center;
+      padding: 1rem; }
+      body .pageGridWrapper .conversionInput .title h1 {
+        font-size: 3rem;
+        font-weight: 600; }
+      body .pageGridWrapper .conversionInput .amount .inputField {
+        font-size: 1.1rem; }
+      body .pageGridWrapper .conversionInput h1 {
+        font-size: 1rem;
+        font-weight: 300; }
+      body .pageGridWrapper .conversionInput select, body .pageGridWrapper .conversionInput input {
+        width: 65vw;
+        height: 3rem;
+        text-align: left;
+        border: 15px solid transparent;
+        border-radius: 35px;
+        font-size: .8rem;
+        font-weight: 100;
+        outline: 0;
+        -webkit-appearance: none; }
+      body .pageGridWrapper .conversionInput .reverse {
+        width: 90vw;
+        text-align: right; }
+        body .pageGridWrapper .conversionInput .reverse button {
+          background-color: #181b1a;
+          border: .5px solid transparent;
+          border-radius: 100px; }
+          body .pageGridWrapper .conversionInput .reverse button img {
+            width: 3.5rem;
+            height: 3rem;
+            padding: .5rem; }
+        body .pageGridWrapper .conversionInput .reverse img:hover {
+          animation-name: rotateReverseButton;
+          animation-duration: 1s; }
+
+@keyframes rotateReverseButton {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(180deg); } }
+        body .pageGridWrapper .conversionInput .reverse button:active {
+          background-color: #FDC830;
+          transform: translateY(1.5px); }
+      body .pageGridWrapper .conversionInput .convertFrom .simple {
+        display: flex;
+        justify-content: space-between; }
+      body .pageGridWrapper .conversionInput .convertFrom .ui.simple.dropdown.item::before {
+        background: none; }
+      body .pageGridWrapper .conversionInput .convertFrom .menu {
+        width: 65vw; }
+      body .pageGridWrapper .conversionInput .positive {
+        width: 65vw;
+        background-color: #181b1a !important; }
+      body .pageGridWrapper .conversionInput .convertNowButton:active {
+        transform: translateY(1.5px); }
+      body .pageGridWrapper .conversionInput .button {
+        display: inline-block;
+        position: relative;
+        transition: 0.5s; }
+      body .pageGridWrapper .conversionInput .button:after {
+        content: ' \  \ \00bb\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 8px;
+        right: 90px;
+        transition: 0.2s;
+        font-size: 1.8rem; }
+      body .pageGridWrapper .conversionInput .button:hover {
+        padding-right: 50px; }
+      body .pageGridWrapper .conversionInput .button:hover:after {
+        opacity: 1; }
+    body .pageGridWrapper .conversionOutput {
+      grid-row: 2 / span 1;
+      background-color: #181b1a;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      body .pageGridWrapper .conversionOutput .conversionSymbol button {
+        background: #FDC830;
+        background: -webkit-linear-gradient(to left, #F37335, #FDC830);
+        background: linear-gradient(to left, #F37335, #FDC830);
+        border: .4px solid transparent;
+        border-radius: 100px; }
+      body .pageGridWrapper .conversionOutput .conversionSymbol img {
+        width: 6rem;
+        height: 6rem;
+        padding: 1rem; }
+      body .pageGridWrapper .conversionOutput .convertedAmount {
+        color: #fdbb2d; }
+      body .pageGridWrapper .conversionOutput .convertedToAmount {
+        color: #f68f34; }
+      body .pageGridWrapper .conversionOutput .currentUnit, body .pageGridWrapper .conversionOutput .convertedUnit {
+        color: #A9A3A2; }
+      body .pageGridWrapper .conversionOutput .convertedEquation {
+        color: #F37335; }
+
+@media only screen and (min-width: 768px) {
+  body {
+    overflow: hidden;
+    background: #FDC830;
+    background: -webkit-linear-gradient(to left, #F37335, #FDC830);
+    background: linear-gradient(to left, #F37335, #FDC830); }
+    body .pageGridWrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 100vw; }
+      body .pageGridWrapper .conversionInput {
+        grid-column: 1 / span 2;
+        height: 100vh;
+        text-align: left;
+        margin: 3rem auto;
+        line-height: 3rem; }
+        body .pageGridWrapper .conversionInput select, body .pageGridWrapper .conversionInput input {
+          width: 40vw; }
+        body .pageGridWrapper .conversionInput .convertFrom .menu {
+          width: 40vw; }
+        body .pageGridWrapper .conversionInput .positive {
+          width: 40vw; }
+        body .pageGridWrapper .conversionInput .title h1 {
+          color: white; }
+        body .pageGridWrapper .conversionInput .reverse {
+          width: 47.5vw; }
+      body .pageGridWrapper .conversionOutput {
+        grid-column: 3 / span 1;
+        height: 100vh;
+        padding-right: 2rem;
+        grid-row: 1 / span 2;
+        text-align: right;
+        padding: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        align-content: flex-start;
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%); }
+        body .pageGridWrapper .conversionOutput .conversionSymbol img {
+          width: 9rem;
+          height: 9rem;
+          padding: 2rem; }
+        body .pageGridWrapper .conversionOutput h1 {
+          font-size: 3.2rem;
+          font-weight: 100; }
+        body .pageGridWrapper .conversionOutput h3, body .pageGridWrapper .conversionOutput h4 {
+          font-size: 1.3rem;
+          font-weight: 100; }
+        body .pageGridWrapper .conversionOutput .convertedEquation {
+          word-spacing: .3rem; } }
+
+@media (min-width: 1025px) {
+  body .pageGridWrapper .conversionOutput {
+    padding-right: 5rem; }
+    body .pageGridWrapper .conversionOutput .conversionSymbol img {
+      width: 10rem;
+      height: 10rem;
+      padding: 2rem; }
+    body .pageGridWrapper .conversionOutput h1 {
+      font-size: 4.2rem;
+      font-weight: 100; }
+    body .pageGridWrapper .conversionOutput h3, body .pageGridWrapper .conversionOutput h4 {
+      font-size: 1.3rem;
+      font-weight: 100; }
+    body .pageGridWrapper .conversionOutput .convertedEquation {
+      word-spacing: .3rem; } }

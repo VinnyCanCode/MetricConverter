@@ -1,0 +1,67 @@
+@media only screen and (min-width: 768px) {
+  body {
+    overflow: hidden;
+    background: #FDC830;
+    background: -webkit-linear-gradient(to left, #F37335, #FDC830);
+    background: linear-gradient(to left, #F37335, #FDC830); }
+    body .pageGridWrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 100vw; }
+      body .pageGridWrapper .conversionInput {
+        grid-column: 1 / span 2;
+        height: 100vh;
+        text-align: left;
+        margin: 3rem auto;
+        line-height: 3rem; }
+        body .pageGridWrapper .conversionInput select, body .pageGridWrapper .conversionInput input {
+          width: 40vw; }
+        body .pageGridWrapper .conversionInput .convertFrom .menu {
+          width: 40vw; }
+        body .pageGridWrapper .conversionInput .positive {
+          width: 40vw; }
+        body .pageGridWrapper .conversionInput .title h1 {
+          color: white; }
+        body .pageGridWrapper .conversionInput .reverse {
+          width: 47.5vw; }
+      body .pageGridWrapper .conversionOutput {
+        grid-column: 3 / span 1;
+        height: 100vh;
+        padding-right: 2rem;
+        grid-row: 1 / span 2;
+        text-align: right;
+        padding: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        align-content: flex-start;
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%); }
+        body .pageGridWrapper .conversionOutput .conversionSymbol img {
+          width: 9rem;
+          height: 9rem;
+          padding: 2rem; }
+        body .pageGridWrapper .conversionOutput h1 {
+          font-size: 3.2rem;
+          font-weight: 100; }
+        body .pageGridWrapper .conversionOutput h3, body .pageGridWrapper .conversionOutput h4 {
+          font-size: 1.3rem;
+          font-weight: 100; }
+        body .pageGridWrapper .conversionOutput .convertedEquation {
+          word-spacing: .3rem; } }
+
+@media (min-width: 1025px) {
+  body .pageGridWrapper .conversionOutput {
+    padding-right: 5rem; }
+    body .pageGridWrapper .conversionOutput .conversionSymbol img {
+      width: 10rem;
+      height: 10rem;
+      padding: 2rem; }
+    body .pageGridWrapper .conversionOutput h1 {
+      font-size: 4.2rem;
+      font-weight: 100; }
+    body .pageGridWrapper .conversionOutput h3, body .pageGridWrapper .conversionOutput h4 {
+      font-size: 1.3rem;
+      font-weight: 100; }
+    body .pageGridWrapper .conversionOutput .convertedEquation {
+      word-spacing: .3rem; } }

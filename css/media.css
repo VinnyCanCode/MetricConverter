@@ -21,7 +21,8 @@
         body .pageGridWrapper .conversionInput .positive {
           width: 40vw; }
         body .pageGridWrapper .conversionInput .title h1 {
-          color: white; }
+          color: white;
+          text-shadow: -2px -1px 0 #000, 1px -1px 0 #000, -4px  1px 0 #000, 1px  1px 0 #000; }
         body .pageGridWrapper .conversionInput .reverse {
           width: 47.5vw; }
       body .pageGridWrapper .conversionOutput {
@@ -52,7 +53,7 @@
 
 @media (min-width: 1025px) {
   body .pageGridWrapper .conversionOutput {
-    padding-right: 5rem; }
+    padding-right: 3.5rem; }
     body .pageGridWrapper .conversionOutput .conversionSymbol img {
       width: 10rem;
       height: 10rem;

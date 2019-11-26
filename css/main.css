@@ -31,7 +31,8 @@ body {
       padding: 1rem; }
       body .pageGridWrapper .conversionInput .title h1 {
         font-size: 3rem;
-        font-weight: 600; }
+        font-weight: 600;
+        text-shadow: -3px -1px 0 #fff, 1px -1px 0 #fff, -2px  1px 0 #fff, 1px  1px 0 #fff; }
       body .pageGridWrapper .conversionInput .amount .inputField {
         font-size: 1.1rem; }
       body .pageGridWrapper .conversionInput h1 {
@@ -117,9 +118,11 @@ body {
         height: 6rem;
         padding: 1rem; }
       body .pageGridWrapper .conversionOutput .convertedAmount {
-        color: #fdbb2d; }
+        color: #fdbb2d;
+        font-size: 2.7rem; }
       body .pageGridWrapper .conversionOutput .convertedToAmount {
-        color: #f68f34; }
+        color: #f68f34;
+        font-size: 2.7rem; }
       body .pageGridWrapper .conversionOutput .currentUnit, body .pageGridWrapper .conversionOutput .convertedUnit {
         color: #A9A3A2; }
       body .pageGridWrapper .conversionOutput .convertedEquation {
@@ -148,7 +151,8 @@ body {
         body .pageGridWrapper .conversionInput .positive {
           width: 40vw; }
         body .pageGridWrapper .conversionInput .title h1 {
-          color: white; }
+          color: white;
+          text-shadow: -2px -1px 0 #000, 1px -1px 0 #000, -4px  1px 0 #000, 1px  1px 0 #000; }
         body .pageGridWrapper .conversionInput .reverse {
           width: 47.5vw; }
       body .pageGridWrapper .conversionOutput {
@@ -179,7 +183,7 @@ body {
 
 @media (min-width: 1025px) {
   body .pageGridWrapper .conversionOutput {
-    padding-right: 5rem; }
+    padding-right: 3.5rem; }
     body .pageGridWrapper .conversionOutput .conversionSymbol img {
       width: 10rem;
       height: 10rem;
